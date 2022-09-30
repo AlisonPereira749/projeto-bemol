@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+
+:root {
+    --branco: #FFFFFF;
+    --dark: #0A102E;
+    --grey-primary: #424242;
+    --grey-secondary: #646464;
+    --grey-terceario: #C6C6C6;
+    --main-dark: #1D2F8A;
+    --main-color: #4059D7;
+    --main-light: #8C9BE7;
+    --main-outline: #4059D7;
+    --hot-primary: #DB8F00;
+    --hot-secondary: #FFC04A;
+    --hot-light: #FFD586;
+    --hot-outline: #FFC04A;
+}
+
+/* Confg Geral */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    font-size: 60px;
+    color: var(--main-dark);
+}
+
+p {
+    font-size: 16px;
+}
+
+.header {
+    background-color: var(--main-color);
+    height: 130px;
+    width: 100%;
+}
+
+.container {
+    max-width: 1143px;
+    margin: 0 auto;
+}
+
+.showcase {
+    padding-top: 60px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.spotlight {
+    width: 50%;
+}
+
+.spotlight > .text {
+    color: var(--main-dark);
+    margin: 20px 0;
+}
+
+.button {
+    background-color: var(--hot-secondary);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.spotlight .button:hover,
+.links #buttonHover:hover {
+    background-color: var(--hot-primary);
+    transition: ease-in 300ms;
+}
+
+.btn {
+    position: absolute;
+}
+
+.conteiner_img img {
+    width: 75%;
+}
+
+/* Section Features */
+.features {
+    padding: 90px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features_title {
+    font-size: 20px;
+    color: var(--main-dark);
+    font-weight: bold;
+}
+
+.benefits {
+    display: flex;
+}
+
+.benefits img {
+    width: 550px;
+}
+
+.features_box {
+    height: 500px;
+    margin: auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    column-gap: 15px;
+}
+
+.item {
+    text-align: center;
+}
+
+.item img {
+    width: 90px;
+}
+
+.item .caption{
+    font-size: 16px;
+    color: var(--main-dark);
+    font-weight: 500;
+}
+
+/* Section bonus */
+.bonus {
+    background-color: var(--main-color);
+    margin: 10vh auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.item__left img {
+    max-width: 250px;
+}
+
+.item__right .text {
+    color: var(--main-light);
+    font-weight: 500;
+}
+
+.text strong {
+    color: var(--branco);
+}
+
+.item__right img {
+    width: 530px;
+    margin-top: 30px;
+}
+
+/* Section points gain */
+.points__gain {
+    width: 100%;
+    margin: 15vh 0;
+}
+
+/* Section bonus simulator */
+.bonus_simulator {
+    width: 100%;
+    margin: 15vh 0;
+}
+
+.bonus_simulator h3.title {
+    font-size: 40px;
+}
+
+.container__calculator {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#inputValue {
+    margin-bottom: 25px;
+    flex-direction: column;
+    display: flex;
+}
+
+.valorInputSpan {
+    font-size: 20px;
+    color: var(--dark);
+}
+
+input#valorInput {
+    margin: 20px 0;
+    border: none;
+    border-bottom: 2px solid var(--main-dark);
+    width: 320px;
+    outline: none;
+    font-size: 30px;
+    color: var(--main-color);
+    font-weight: 400;
+}
+
+
+#inputValue span {
+    color: var(--main-dark);
+}
+
+#timeInput {
+    flex-direction: column;
+    display: flex;
+}
+
+.contagemTempo {
+    margin: 15px 0;
+}
+
+.inputSlideTempo {
+    width: 320px;
+}
+
+/* Box Result */
+.box_result {
+    width: 350px;
+    background-color: var(--main-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.box_result .estilizacaoSpan {
+    color: var(--grey-terceario);
+    font-size: 15px;
+}
+
+#simulatorDay div,
+#simulatorMonth div {
+    margin: 10px 0;
+    padding-right: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#simulatorMonth {
+    border-top: 2px solid var(--branco);
+    padding-top: 10px;
+}
+
+#simulatorDay div img,
+#simulatorMonth div img {
+    width: 50px;
+}
+
+#simulatorDay div span,
+#simulatorMonth div span {
+    color: var(--branco);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.simulatorButton {
+    background-color: var(--hot-secondary);
+    color: var(--main-outline);
+    font-weight: bold;
+    margin-top: 15px;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.simulatorButton:hover {
+    background-color: var(--hot-primary);
+    transition: ease-in 300ms;
+}
+
+/* Article sixth section */
+.sixthSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 10vh 0;
+}
+
+.sixthSection .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.links .last {
+    border: 3px solid var(--hot-outline);
+    background-color: transparent;
+}
+
+.sixthSection h3.title {
+    font-size: 40px;
+}
+
+/* footer */
+footer {
+    background-color: var(--main-color);
+    width: 100%;
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container div img {
+    width: 80%;
+}
